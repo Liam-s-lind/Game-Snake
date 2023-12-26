@@ -28,3 +28,46 @@ body::before {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
+
+p {
+    font-size: 15px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.my-footer {
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links a img {
+    width: 15px;
+    height: 15px;
+}
+
+.social-links a+a {
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
