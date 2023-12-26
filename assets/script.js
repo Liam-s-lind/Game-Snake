@@ -101,3 +101,8 @@ function placeFood() {
     foodY = Math.floor(Math.random() * rows) * blockSize;
     foodX = Math.floor(Math.random() * cols) * blockSize;
 }
+
+function showGameOverAlert() {
+    alert("You Lose!");
+    location.reload();
+}
