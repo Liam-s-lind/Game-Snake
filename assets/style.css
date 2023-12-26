@@ -29,6 +29,9 @@ body::before {
     z-index: -1;
 }
 
+.startButton {
+}
+
 .center-container {
     display: flex;
     justify-content: center;

@@ -20,16 +20,26 @@ var foodY;
 
 var gameOver = false;
 
+function startGame() {
+    document.getElementById('startButton').style.display = 'none';
+    document.getElementById('board').style.display = 'block';
+    initGame();
+}
+
 window.onload = function () {
+    document.getElementById('startButton').addEventListener('click', startGame);
+};
+
+function initGame() {
     board = document.getElementById("board");
     board.height = rows * blockSize;
     board.width = cols * blockSize;
-    context = board.getContext("2d"); //this is used for the drawing on the board
+    context = board.getContext("2d");
 
     placeFood();
     document.addEventListener("keyup", changeDirection);
-    setInterval(update, 1000 / 10); // update placement in canvas every 100 milliseconds
-};
+    setInterval(update, 1000 / 10);
+}
 
 function update() {
     if (gameOver) {
