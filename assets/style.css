@@ -29,9 +29,6 @@ body::before {
     z-index: -1;
 }
 
-p {
-    font-size: 15px;
-}
 
 footer {
     background-color: rgba(0, 0, 0, 0.5);
@@ -46,6 +43,7 @@ footer {
 
 .my-footer {
     text-align: center;
+    font-size: 15px;
 }
 
 .footer-content {
